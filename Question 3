@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+struct point{
+float x;
+float y;
+};
+int main(){
+    point pointers[7];
+        int countFirstQuadrant=0;
+        cout<<"Enter coordinates(x y} for 7 points:\n";
+for(int i=0;i<7;i++){
+    cout<<"point"<<i+1<<":";
+cin>>pointers[i].x>>pointers[i].y;
+};
+for(int i=0;i<7;i++){
+    if(pointers[i].x>0&&pointers[i].y>0){
+        countFirstQuadrant++;
+    };
+};
+cout<<"\n Number of points in the first quadrant:";
+cout<<countFirstQuadrant<<endl;
+return 0;
+}
